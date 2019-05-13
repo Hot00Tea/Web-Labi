@@ -1,0 +1,10 @@
+<div ng-controller="page1Controller">
+	<label for="page1Input">Input1</label>
+	<input type="text" id="page1Input" ng-model="text">
+	<h1>{{text}}</h1>
+	<ul>
+		<li ng-repeat="obj in attr track by $index">
+			<h3>{{obj.name}}:{{obj.value}}</h3>
+		</li>
+	</ul>
+</div>
